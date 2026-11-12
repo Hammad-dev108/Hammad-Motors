@@ -1,0 +1,63 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.hero-section {
+  min-height: 85vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)),
+              url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+}
+
+.hero-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)),
+              url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  color: #ffffff;
+  padding: 100px 0;
+}
+
+.car-thumb,
+.car-img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.gallery-img {
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-card {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-card:hover .gallery-img {
+  transform: scale(1.05);
+}
+
+.service-card,
+.car-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.service-card {
+  border-top: 4px solid transparent !important;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  border-top: 4px solid #dc3545 !important;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
